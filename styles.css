@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Biryani', sans-serif;
+}
+
+nav {
+  position: absolute;
+  height: 100%;
+  width: 75px;
+}
+
+main {
+  margin-left: 75px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+button {
+  background-color: #1CA3BA;
+  border-radius: 15px;
+  color: #fff;
+  display: inline-block;
+  padding: 1% 5%;
+  font-size: 13px;
+}
+
+.transactions-table {
+  margin: 5%;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+}
+
+.transactions-table td {
+  border-bottom: solid 1px black;
+  padding-bottom: 5px;
+}
+
+.nav-logo {
+  width: 100%;
+  padding: 7.5%;
+  margin-top: 25%;
+  position: absolute;
+}
+
+.nav-links {
+  margin-top: 38vh;
+}
+
+.nav-links li {
+  text-align: center;
+  padding: 5% 20%;
+}
+
+.page-title {
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.row {
+  display: block;
+  overflow: auto;
+}
+
+.row-space-between {
+  display: inline-block;
+  text-align: justify;
+  width: 100%;
+}
+
+.row-space-between:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.primary-content {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 45%;
+  min-width: 400px;
+}
+
+.welcome-banner {
+  position: relative;
+  background: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  height: 15vh;
+  vertical-align: middle;
+}
+
+.welcome-banner h4 {
+  font-size: 18px;
+  top: 37.5%;
+  left: 5%;
+  display: inline-block;
+  position: absolute;
+}
+
+.dashboard-card {
+  width: 13vw;
+  min-width: 150px;
+  height: 11vh;
+  margin-top: 5%;
+}
+
+.account {
+  margin: 2.5% 0;
+  height: 7.5vh;
+}
+
+.account img {
+  height: 100%;
+  padding: 1%;
+  margin-left: 2.5%;
+  vertical-align: middle;
+}
+
+.account-name {
+  display: inline-block;
+  margin-left: 9%;
+  margin-right: 5%;
+  width: 25%;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.account-type {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20.5%;
+}
+
+.secondary-content {
+  margin-left: 2.5%;
+  width: 40%;
+  min-width: 400px;
+}
+
+.secondary-title {
+  display: inline-block;
+}
+
+.float-right {
+  float: right;
+}
+
+.rounded-corners {
+  border-radius: 5px;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.light-grey {
+  background-color: #F5F5F5;
+}
