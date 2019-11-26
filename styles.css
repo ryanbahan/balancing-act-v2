@@ -103,6 +103,7 @@ button {
   height: 15vh;
   min-height: 100px;
   vertical-align: middle;
+  margin-bottom: 5%;
 }
 
 .welcome-banner h4 {
@@ -127,7 +128,6 @@ button {
   min-width: 150px;
   height: 13vh;
   min-height: 75px;
-  margin-top: 5%;
 }
 
 .dashboard-card h5 {
@@ -206,4 +206,10 @@ button {
   margin-left: 5%;
   margin-top: 4%;
   width: 50%;
+}
+
+/* Javascript Stuff */
+
+.hide {
+  display: none;
 }
