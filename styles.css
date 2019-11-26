@@ -76,7 +76,7 @@ button {
 }
 
 .nav-links {
-  margin-top: 38vh;
+  margin-top: 41vh;
 }
 
 .nav-links li {
@@ -125,8 +125,20 @@ button {
 .dashboard-card {
   width: 13vw;
   min-width: 150px;
-  height: 11vh;
+  height: 13vh;
+  min-height: 75px;
   margin-top: 5%;
+}
+
+.dashboard-card h5 {
+  font-size: 10px;
+  margin-left: 7.5%;
+  margin-top: 12.5%;
+}
+
+.dashboard-card p {
+  margin-left: 7.5%;
+  font-size: 18px;
 }
 
 .account {
@@ -161,6 +173,7 @@ button {
   margin-left: 2.5%;
   width: 42.5%;
   min-width: 400px;
+  margin-bottom: 5%;
 }
 
 .secondary-title {
