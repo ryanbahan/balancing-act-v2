@@ -45,6 +45,10 @@
   width: 100%;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 /* Document Styles */
 
 nav {
@@ -65,7 +69,7 @@ button {
   border-radius: 15px;
   color: #fff;
   display: inline-block;
-  padding: 1% 5%;
+  padding: 1.125% 5% 0.25% 5%;
   font-size: 13px;
 }
 
@@ -118,6 +122,7 @@ button:hover {
   margin-right: 2.5%;
   width: 45%;
   min-width: 400px;
+  max-height: 82.5vh;
 }
 
 .welcome-banner {
@@ -198,6 +203,8 @@ button:hover {
   width: 42.5%;
   min-width: 400px;
   margin-bottom: 5%;
+  max-height: 82.5vh;
+  overflow: scroll;
 }
 
 .secondary-title {
@@ -252,7 +259,7 @@ button:hover {
 
 .transactions-header button {
   font-size: 10px;
-  width: 100px;
+  width: 110px;
   vertical-align: middle;
   float: right;
   margin-top: 10px;
@@ -261,7 +268,7 @@ button:hover {
 }
 
 .transactions-form h2 {
-  margin: 5% 0 5% 5%;
+  margin: 5% 0 2.5% 5%;
   text-align: center;
 }
 
@@ -269,6 +276,10 @@ button:hover {
   display: block;
   margin: 0 auto;
   width: 75%;
+}
+
+.transactions-form label {
+  margin-top: 1.5%;
 }
 
 .transactions-form button {

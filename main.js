@@ -63,7 +63,7 @@ function closeTransactionModal() {
         <button>ALL</button>
       </div>
     </div>
-    <section class="primary-content column white">
+    <section class="primary-content column white overflow-scroll">
       <table class="transactions-table">
         <thead>
           <tr>
@@ -144,6 +144,18 @@ function closeTransactionModal() {
             <td>-</td>
             <td>$80.00</td>
           </tr>
+          <tr>
+            <td>Oct 25, 2019</td>
+            <td>Pig Train</td>
+            <td>-</td>
+            <td>$80.00</td>
+          </tr>
+          <tr>
+            <td>Oct 25, 2019</td>
+            <td>RTD</td>
+            <td>-</td>
+            <td>$80.00</td>
+          </tr>
         </thead>
       </table>
     </section>
@@ -165,7 +177,7 @@ function closeTransactionModal() {
         <label for"account-from">Account from</label>
         <select name="account-from">
           <option value="checking">Checking</option>
-          <option value="savings">Expense</option>
+          <option value="savings">Savings</option>
           <option value="amazon-credit">Amazon Credit</option>
           <option value="southwest-credit">Southwest Credit</option>
         </select>
@@ -175,6 +187,8 @@ function closeTransactionModal() {
         <input type="text" name="outflow">
         <label for"category">Inflow</label>
         <input type="text" name="category">
+        <label for"memo">Memo (Optional)</label>
+        <input type="text" name="memo">
         <button type="button" id="log-expense-btn">Log Expense</button>
       </form>
     </section>`;
