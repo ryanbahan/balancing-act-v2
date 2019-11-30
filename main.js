@@ -1,5 +1,3 @@
-
-
 // Close welcome banner on click
 
   const bubbleParent = document.querySelector('main');
@@ -24,12 +22,13 @@
   bubbleParent.addEventListener('click', logExpense)
 
   function logExpense() {
-    if (event.target.id === "log-expense-btn") {
-      const expenseForm = document.getElementById('transactions-form');
+    const expenseForm = document.getElementById('transactions-form');
+    if (event.target.id === "log-expense-btn" && expenseForm.checkValidity() === true ) {
       expenseForm.insertAdjacentHTML('beforeend', `<div class="logged-transaction-modal" id="logged-transaction-modal">
                 <p>Your expense of $87 has been logged.</p>
                 <span class="transactions-modal-close-btn" id="transactions-modal-close-btn">&times;</span>
               </div>`);
+      event.preventDefault();
     }
   }
 
@@ -182,14 +181,14 @@ function closeTransactionModal() {
           <option value="southwest-credit">Southwest Credit</option>
         </select>
         <label for"payee">Payee</label>
-        <input type="text" name="payee">
+        <input type="text" name="payee" required>
         <label for"outflow">Outflow</label>
-        <input type="text" name="outflow">
-        <label for"category">Inflow</label>
-        <input type="text" name="category">
+        <input type="text" name="outflow" required>
+        <label for"inflow">Inflow</label>
+        <input type="text" name="inflow" required>
         <label for"memo">Memo (Optional)</label>
         <input type="text" name="memo">
-        <button type="button" id="log-expense-btn">Log Expense</button>
+        <button type="submit" id="log-expense-btn">Log Expense</button>
       </form>
     </section>`;
   }

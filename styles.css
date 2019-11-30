@@ -203,8 +203,6 @@ button:hover {
   width: 42.5%;
   min-width: 400px;
   margin-bottom: 5%;
-  max-height: 82.5vh;
-  overflow: scroll;
 }
 
 .secondary-title {
