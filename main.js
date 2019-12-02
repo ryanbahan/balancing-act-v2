@@ -29,6 +29,7 @@
                 <span class="transactions-modal-close-btn" id="transactions-modal-close-btn">&times;</span>
               </div>`);
       event.preventDefault();
+      expenseForm.reset();
     }
   }
 
@@ -43,9 +44,11 @@ function closeTransactionModal() {
   }
 }
 
+
 // Toggle views for nav
   const dashboard = document.getElementById('dashboard-view')
   const transactions = document.getElementById('transactions-view')
+  const profile = document.getElementById('profile-view')
 
   transactions.addEventListener('click', displayTransactionsView)
 
@@ -422,3 +425,9 @@ function closeTransactionModal() {
       </section>`;
     }
   }
+
+    profile.addEventListener('click', displayProfileView)
+
+    function displayProfileView() {
+      console.log("woof")
+    }

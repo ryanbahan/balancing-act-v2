@@ -49,6 +49,10 @@
   overflow: scroll;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /* Document Styles */
 
 nav {
@@ -121,6 +125,14 @@ button:hover {
   margin-left: 2.5%;
   margin-right: 2.5%;
   width: 45%;
+  min-width: 400px;
+  max-height: 82.5vh;
+}
+
+.primary-content-narrow {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 35%;
   min-width: 400px;
   max-height: 82.5vh;
 }
@@ -205,6 +217,13 @@ button:hover {
   margin-bottom: 5%;
 }
 
+.secondary-content-wide {
+  /* margin-left: 2.5%; */
+  width: 55%;
+  min-width: 400px;
+  margin-bottom: 5%;
+}
+
 .secondary-title {
   display: inline-block;
 }
@@ -282,6 +301,56 @@ button:hover {
 
 .transactions-form button {
   margin: 3.5% 0 7.5% 12%;
+}
+
+.profile-header {
+  margin-left: 2.5%;
+  margin-top: 7.5%;
+}
+
+.secondary-profile-header {
+  margin-top: 5%;
+}
+
+.profile-dashboard {
+  display: inline-block;
+  border: solid 1px black;
+}
+
+.profile-summary {
+  border: solid 1px black;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  width: 90%;
+}
+
+.accounts-summary {
+  border: solid 1px black;
+  display: inline-block;
+  vertical-align: top;
+  width: 50vw;
+}
+
+.add-account ul {
+  display: flex;
+  list-style: none;
+  height: 10vh;
+}
+
+.add-account li {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  height: 85%;
+  margin-left: 2.5%;
+  justify-content: flex-end;
+}
+
+.add-account-submit {
+  min-width: 150px;
+  min-height: 30px;
 }
 
 /* Javascript Stuff */
